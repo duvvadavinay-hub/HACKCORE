@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    /* ===== Body Background ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    margin-top: 40px;
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+/* ===== Sub Text ===== */
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== Select Dropdown ===== */
+select {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin: 10px;
+}
+
+/* ===== Submit Button ===== */
+button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+/* ===== Button Hover ===== */
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* ===== Complaint Box Container ===== */
+ol {
+    width: 70%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    text-align: left;
+}
+
+/* ===== List Items ===== */
+li {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* ===== Textarea ===== */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    resize: none;
+    outline: none;
+}
+
+/* ===== File Input ===== */
+input[type="file"] {
+    margin-top: 10px;
+    color: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    ol {
+        width: 90%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+ </style>
+</head>
+<body>
+    
+     <h1>LAB MATERIALS</h1>
+   <p> <em>enter branch;</em> </p>  
+  <SELect id="LAB MATERIALS">
+    <option value="">choose section</option>
+ <option value="csd">CSD</option>
+ <option value="EEE">EEE</option>
+ <option value="ECE">ECE</option>
+ <option value="CSE">CSE</option>
+ <option value="CIC">CIC</option>
+ <option value="AIDS">AIDS</option>
+ <option value="CSBS">CSBS</option>
+  </SELect>
+  <button>submit</button>
+  <P>COMPLAINT TYPE:</P>
+  <OL type="1">
+    <LI>ELECTRICITY
+        <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+        <input type="file" name="file" id="problem image">
+        <br><br>
+        <button>submit</button>
+        
+    </LI>
+    <br>
+    <LI>SEATING ISSUES</LI>
+    <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+         <input type="file" name="file" id="problem image"><br><br>
+         <button>submit</button>
+         <br><br>
+    <LI>REQUIREMENTS ISSUE</LI>
+    <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+         <input type="file" name="file" id="problem image"><br><br>
+         <button>submit</button>
+         <br><br>
+    <LI>OTHER</LI>
+    <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+         <input type="file" name="file" id="problem image"><br><br>
+         <button>submit</button>
+  </OL>
+</body>
+</html>

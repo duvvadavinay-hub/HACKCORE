@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complaint portal</title>
+    <style>
+        /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Live Engineering Background */
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins',sans-serif;
+    text-align:center;
+    overflow:hidden;
+
+    /* Engineering Lab Image */
+    background: url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc") no-repeat center center/cover;
+    animation: zoomBg 20s infinite alternate;
+}
+
+/* Slow Zoom Effect */
+@keyframes zoomBg{
+    0%{background-size:100%;}
+    100%{background-size:110%;}
+}
+
+/* Dark Overlay */
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    z-index:0;
+}
+
+/* Heading */
+h1{
+    position:relative;
+    z-index:2;
+    color:#00f7ff;
+    font-size:45px;
+    font-family:'Orbitron',sans-serif;
+    letter-spacing:3px;
+    margin-bottom:50px;
+    text-shadow:0 0 20px #00f7ff;
+    animation: glow 2s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow{
+    from{ text-shadow:0 0 10px #00f7ff;}
+    to{ text-shadow:0 0 30px #00f7ff,0 0 60px #00f7ff;}
+}
+
+/* Remove underline */
+a{
+    text-decoration:none;
+    position:relative;
+    z-index:2;
+}
+
+/* Buttons */
+button{
+    width:220px;
+    padding:15px;
+    margin:15px;
+    border:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+    backdrop-filter:blur(10px);
+    border:2px solid #00f7ff;
+    transition:0.4s;
+    box-shadow:0 0 15px rgba(0,247,255,0.5);
+}
+
+/* Hover Effect */
+button:hover{
+    background:#00f7ff;
+    color:#000;
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 0 30px #00f7ff;
+}
+
+/* Click Effect */
+button:active{
+    transform:scale(0.95);
+}
+
+/* Responsive */
+@media(max-width:500px){
+    h1{
+        font-size:28px;
+    }
+    button{
+        width:180px;
+        padding:12px;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <h1><strong>COMPLAINT PORTAL</strong></h1>
+<br>
+    <a href="student.html">
+<button><strong>STUDENT</strong></button> 
+</a>
+<a href="admin.html">
+<button><strong>ADMIN</strong></button>
+</a>
+<br>
+</body>
+</html>

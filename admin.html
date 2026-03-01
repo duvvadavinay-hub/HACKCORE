@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Body with Animated Security Background */
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b") no-repeat center center/cover;
+    animation: zoomBg 20s infinite alternate;
+    color:#fff;
+    overflow:hidden;
+}
+
+/* Background Zoom */
+@keyframes zoomBg{
+    0%{background-size:100%;}
+    100%{background-size:115%;}
+}
+
+/* Dark Overlay */
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    z-index:0;
+}
+
+/* Admin Heading */
+h1{
+    position:relative;
+    z-index:2;
+    font-family:'Orbitron',sans-serif;
+    font-size:40px;
+    letter-spacing:3px;
+    margin-bottom:40px;
+    color:#ff4b5c;
+    text-shadow:0 0 20px #ff4b5c;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 10px #ff4b5c;}
+    to{ text-shadow:0 0 30px #ff4b5c,0 0 60px #ff4b5c;}
+}
+
+/* Input Styling */
+label{
+    position:relative;
+    z-index:2;
+    display:block;
+    margin-top:20px;
+    font-size:16px;
+    font-weight:500;
+}
+
+input{
+    position:relative;
+    z-index:2;
+    width:300px;
+    padding:12px;
+    margin-top:8px;
+    border-radius:30px;
+    border:2px solid #ff4b5c;
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+    outline:none;
+    text-align:center;
+    transition:0.4s;
+}
+
+/* Input Focus Effect */
+input:focus{
+    box-shadow:0 0 20px #ff4b5c;
+    transform:scale(1.05);
+}
+
+/* Add Login Button Style Automatically */
+button{
+    margin-top:25px;
+    padding:12px 40px;
+    border:none;
+    border-radius:40px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    background:#ff4b5c;
+    color:#fff;
+    transition:0.4s;
+    box-shadow:0 0 20px #ff4b5c;
+}
+
+/* Hover Effect */
+button:hover{
+    background:#ff1e38;
+    transform:translateY(-5px) scale(1.1);
+    box-shadow:0 0 40px #ff4b5c;
+}
+
+/* Responsive */
+@media(max-width:500px){
+    input{
+        width:90%;
+    }
+}
+</style></head>
+<body>
+    <h1>ADMIN PAGE</h1>
+    <br>
+    <label for="ID">ID:</label>
+    <input type="ID" name="ID" id="ID">
+    <label for="Password">Password</label>
+    <input type="Password" name="Password" id="Password">
+</body>
+</html>

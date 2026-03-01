@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* ===== Body Background ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #8360c3, #2ebf91);
+    text-align: center;
+    color: white;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+/* ===== Sub Heading ===== */
+h4 {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* ===== Dropdown ===== */
+select {
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* ===== Paragraph ===== */
+p {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* ===== Textarea ===== */
+textarea {
+    width: 60%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-top: 15px;
+}
+
+/* ===== Submit Button ===== */
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ===== Hover Effect ===== */
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    textarea {
+        width: 90%;
+    }
+
+    select {
+        width: 90%;
+    }
+}</style>
+</head>
+<body>
+     <h1>OTHER<h1>
+   <h4> enter your branch:  
+  <SELect id="OTHER">
+    <option value="">choose section</option>
+ <option value="csd">CSD</option>
+ <option value="EEE">EEE</option>
+ <option value="ECE">ECE</option>
+ <option value="CSE">CSE</option>
+ <option value="CIC">CIC</option>
+ <option value="AIDS">AIDS</option>
+ <option value="CSBS">CSBS</option>
+  </SELect>
+  </h4>
+  
+  
+    <p> please submit your problem clearly:</p>
+     <FORm>
+            <TExtarea rows="10" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+        <button>submit</button>
+  
+    
+</body>
+</html>

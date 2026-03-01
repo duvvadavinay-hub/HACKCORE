@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKCORE</title>
+ <style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* Main Heading */
+h1 {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+/* Paragraph Text */
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Dropdown */
+select {
+    margin: 15px 0;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Ordered List */
+ol {
+    list-style-position: inside;
+    padding: 20px;
+}
+
+/* Complaint Box */
+li {
+    background: white;
+    margin: 25px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    resize: none;
+}
+
+/* File Input */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Buttons */
+button {
+    margin-top: 12px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+ </style>
+</head>
+<body>
+      
+     <h1>CLASSROOM COMPlAINTS</h1>
+   <p> <em>enter branch;</em> </p>  
+  <SELect id="classrooms">
+    <option value="">choose section</option>
+ <option value="csd">CSD</option>
+ <option value="EEE">EEE</option>
+ <option value="ECE">ECE</option>
+ <option value="CSE">CSE</option>
+ <option value="CIC">CIC</option>
+ <option value="AIDS">AIDS</option>
+ <option value="CSBS">CSBS</option>
+  </SELect>
+  <button>submit</button>
+  <P>COMPLAINT TYPE:</P>
+  <OL type="1">
+    <LI>ELECTRICITY
+        <FORm>
+            <TExtarea rows="6" cols="60 " placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+        <input type="file" name="file" id="problem image">
+        <br><br>
+        <button>submit</button>
+        
+    </LI>
+    <br>
+    <LI>BENCHES</LI>
+    <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+         <input type="file" name="file" id="problem image"><br><br>
+         <button>submit</button>
+         <br><br>
+    <LI>BOARD</LI>
+    <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+         <input type="file" name="file" id="problem image"><br><br>
+         <button>submit</button>
+         <br><br>
+    <LI>OTHER</LI>
+    <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+         <input type="file" name="file" id="problem image"><br><br>
+         <button>submit</button>
+  </OL>
+</body>
+</html>

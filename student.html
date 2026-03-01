@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student page</title>
+<style>
+    /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Body Background with Live Zoom Animation */
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    overflow:hidden;
+
+    background: url("https://images.unsplash.com/photo-1581092795360-fd1ca04f0952") no-repeat center center/cover;
+    animation: zoomBg 20s infinite alternate;
+}
+
+/* Background Zoom Animation */
+@keyframes zoomBg{
+    0%{background-size:100%;}
+    100%{background-size:115%;}
+}
+
+/* Dark Overlay */
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:0;
+}
+
+/* Floating Particles Effect */
+body::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:radial-gradient(#00f7ff 1px, transparent 1px);
+    background-size:40px 40px;
+    animation: moveParticles 10s linear infinite;
+    opacity:0.2;
+    z-index:1;
+}
+
+@keyframes moveParticles{
+    from{background-position:0 0;}
+    to{background-position:0 200px;}
+}
+
+/* Form Container Glass Effect */
+form, body > label, body > input, body > select, body > p, body > button {
+    position:relative;
+    z-index:2;
+}
+
+/* Wrap entire content in glass card look */
+body{
+    backdrop-filter: blur(5px);
+}
+
+/* Labels */
+label{
+    font-size:18px;
+    font-weight:500;
+    display:block;
+    margin-top:20px;
+    margin-bottom:5px;
+    text-shadow:0 0 10px #00f7ff;
+}
+
+/* Input & Select */
+input, select{
+    width:300px;
+    padding:12px;
+    border-radius:30px;
+    border:2px solid #00f7ff;
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+    outline:none;
+    transition:0.4s;
+    text-align:center;
+    font-size:15px;
+}
+
+/* Focus Effect */
+input:focus, select:focus{
+    box-shadow:0 0 20px #00f7ff;
+    transform:scale(1.05);
+}
+
+/* Dropdown Options */
+select option{
+    color:#000;
+}
+
+/* Paragraph */
+p{
+    margin-top:25px;
+    font-size:16px;
+    color:#ccc;
+}
+
+/* Button */
+button{
+    margin-top:20px;
+    padding:12px 40px;
+    border:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    background:#00f7ff;
+    color:#000;
+    transition:0.4s;
+    box-shadow:0 0 20px #00f7ff;
+}
+
+/* Button Hover */
+button:hover{
+    background:#00c3cc;
+    transform:translateY(-5px) scale(1.1);
+    box-shadow:0 0 40px #00f7ff;
+}
+
+/* Button Click */
+button:active{
+    transform:scale(0.95);
+}
+
+/* Responsive */
+@media(max-width:500px){
+    input, select{
+        width:90%;
+    }
+}
+</style>
+</head>
+<body>
+    <label for="Registration Number"></label><strong>Registration number:</strong> 
+    <input type="text" name="Registration Number" id="Registration Number">
+    <br>
+    <label for="Branch"></label><strong>Branch:</strong>
+    <SELect id="Branch">
+    <option value="choose option">choose option</option>
+    <option value="CSD">CSD</option>
+    <option value="CSE">CSE</option>
+    <option value="AIML">AIML</option>
+    <option value="AIDS">AIDS</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="CSBS">CSBS</option>
+    <option value="CIC">CIC</option>
+    <option value="CSIT">CSIT</option>
+    <option value="MECHANICAL">MECHANICAL</option>
+    <option value="IT">IT</option>
+    <option value="CIVIL">CIVIL</option>
+    </SELect>
+    <br>
+    <p>click on <em>login</em> to write a complaint</p>
+    <button><strong><a href="studentpage.html">login</a></strong></button>
+
+</body>
+</html>

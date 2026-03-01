@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>/* ===== Body Background ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    margin-top: 40px;
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+/* ===== Section Headings ===== */
+h4 {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* ===== Dropdown Styling ===== */
+select {
+    width: 250px;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* ===== Input Styling ===== */
+input {
+    width: 200px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* ===== Textarea Styling ===== */
+textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+/* ===== Labels ===== */
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ===== Buttons ===== */
+button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ===== Hover Effect ===== */
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    textarea {
+        width: 90%;
+    }
+
+    select,
+    input {
+        width: 90%;
+    }
+}</style>
+</head>
+<body>
+     <h1>water issue/h1>
+   <h4> enter your branch:  
+  <SELect id="waterissue">
+    <option value="">choose section</option>
+ <option value="csd">CSD</option>
+ <option value="EEE">EEE</option>
+ <option value="ECE">ECE</option>
+ <option value="CSE">CSE</option>
+ <option value="CIC">CIC</option>
+ <option value="AIDS">AIDS</option>
+ <option value="CSBS">CSBS</option>
+  </SELect>
+  </h4>
+  
+  <h4>Enter issued department:
+  <SELect id="waterissue">
+    <option value="">Department</option>
+ <option value="csd">CSD Block</option>
+ <option value="EEE">EEE Block</option>
+ <option value="ECE">ECE Block</option>
+ <option value="CSE">CSE Block</option>
+ <option value="CIC">CIC Block</option>
+ <option value="AIDS">AIDS Block</option>
+ <option value="CSBS">CSBS Block</option>
+  </SELect>
+  </h4>
+  <LABel>floor:
+        <INput>.<BUtton>SUBMIT</BUtton></INput>
+    </LABel>
+    <p>problem:</p>
+     <FORm>
+            <TExtarea rows="5" cols="50" placeholder="write complaint here !! "></TExtarea>
+        </FORm>
+        <button>submit</button>
+  
+    
+</body>
+</html>
